@@ -2,13 +2,12 @@ package Exemplos.condicao;
 
 public class teste {
 	public static void main(String[] args) {
-		int numeroA = 10;
-		int numeroB = 20;
-		if((numeroA + numeroB) >= 30) { 
-				System.out.println("A soma é maior que 30");
+		if(true & (false | false)) { 
+			System.out.println("Entrou no if");
 		} else {
-			System.out.println("A soma é menor que 30");
+			System.out.println("Não entrou no if");
 		}
+
 
 		}
 
