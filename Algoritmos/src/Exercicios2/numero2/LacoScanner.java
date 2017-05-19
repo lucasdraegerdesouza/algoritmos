@@ -1,4 +1,4 @@
-package exemplos.laco;
+package Exercicios2.numero2;
 
 import java.util.Scanner;
 
