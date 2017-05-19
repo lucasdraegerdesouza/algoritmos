@@ -1,6 +1,6 @@
 package Exercicios2.numero2;
 
-public class Exercicio22 {
+public class Exercicio02 {
 	public static void main(String[] args) {
 		/*2)	Imprima no console uma lista de 10 a -1;*/
 		int n1 = 11;
