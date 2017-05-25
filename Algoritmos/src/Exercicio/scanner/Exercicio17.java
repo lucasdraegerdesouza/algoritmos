@@ -11,6 +11,15 @@ public class Exercicio17 {
  *Pegue o resultado e some com 5 novamente.
  *Imprima o resultado da soma.*/
 		Scanner scanner = new Scanner(System.in);
+		int numero;
+		System.out.println("Digite um numero");
+		numero = scanner.nextInt();
+		
+		numero = numero + 5;
+		System.out.println(numero);
+		
+		numero = numero + 5;
+		System.out.println(numero);
 		
 		scanner.close();
 	}
