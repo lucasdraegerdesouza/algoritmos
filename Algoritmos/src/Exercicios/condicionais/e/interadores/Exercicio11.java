@@ -9,14 +9,25 @@ public class Exercicio11 {
  *utilizando apenas um System.out.println.*/		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Digite um numero double");
-		double n1usr = scanner.nextDouble();
+		int n1usr = scanner.nextInt();
 		
 		System.out.println("Digite outro numero double");
-		double n2usr = scanner.nextDouble();
+		int n2usr = scanner.nextInt();
 		
 		System.out.println("Digite outro numero double");
-		double n3usr = scanner.nextDouble();
+		int n3usr = scanner.nextInt();
+		
+		 if(n1usr > n2usr)
+	           if(n1usr > n3usr)
+	              System.out.println("O maior numero é: " + n1usr);
+	           else
+	              System.out.println("O maior numero é: " + n3usr);
+	        else if(n2usr > n3usr)
+	              System.out.println("O maior numero é: " + n2usr);
+	                else
+	              System.out.println("O maior numero é: " + n3usr);
 			
+		 
 		scanner.close();
 
 	}
