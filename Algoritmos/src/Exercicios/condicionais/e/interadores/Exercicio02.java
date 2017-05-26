@@ -2,7 +2,7 @@ package Exercicios.condicionais.e.interadores;
 
 import java.util.Scanner;
 
-public class Exercicio2 {
+public class Exercicio02 {
 	public static void main(String[] args) {
 /*2.Peça para o usuário digitar um número,
  *pegue o número que o usuário digitou.

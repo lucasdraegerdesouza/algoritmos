@@ -2,7 +2,7 @@ package Exercicios.condicionais.e.interadores;
 
 import java.util.Scanner;
 
-public class Exercicio5 {
+public class Exercicio05 {
 	public static void main(String[] args) {
 /*5.Peça para o usuário digitar a idade e ano de nascimento.
  * Pegue os valores que o usuário digitou.
