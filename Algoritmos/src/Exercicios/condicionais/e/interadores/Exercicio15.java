@@ -10,7 +10,20 @@ public class Exercicio15 {
  *Sendo considerado duas variáveis int um para dia e
  *outra para mês.*/		
 		Scanner scanner = new Scanner(System.in);
+			System.out.println("Digite o dia");
+			int diausr = scanner.nextInt();
 			
+			System.out.println("Digite o numero do seu mes");
+			
+			
+			switch (diausr) {
+			case 31:
+				
+				break;
+
+			default:
+				break;
+			}
 		scanner.close();
 	}
 }
