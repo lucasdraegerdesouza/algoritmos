@@ -14,16 +14,88 @@ public class Exercicio15 {
 			int diausr = scanner.nextInt();
 			
 			System.out.println("Digite o numero do seu mes");
+			int numeromes = scanner.nextInt();
+			boolean validadata = false;
+			switch (numeromes) {
+			case 1:
+				if (diausr <= 31) {
+					validadata = true;
+				}				
+			break;
+			case 2:
+				if (diausr <= 28) {
+					validadata = true;
+				}
+			break;
 			
+			case 3:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
 			
-			switch (diausr) {
-			case 31:
-				
-				break;
-
-			default:
-				break;
+			case 4:
+				if (diausr <= 30) {
+					validadata = true;
+				}
+			break;
+			
+			case 5:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
+			
+			case 6:
+				if (diausr <= 30) {
+					validadata = true;
+				}
+			break;
+			
+			case 7:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
+			
+			case 8:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
+			
+			case 9:
+				if (diausr <= 30) {
+					validadata = true;
+				}
+			break;
+			
+			case 10:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
+			
+			case 11:
+				if (diausr <= 30) {
+					validadata = true;
+				}
+			break;
+			
+			case 12:
+				if (diausr <= 31) {
+					validadata = true;
+				}
+			break;
+			default: System.out.println("Entre com um numero de mes valido!");
+			
 			}
+			if (validadata == true) {
+				System.out.println("A data está correta");
+				}else {
+					System.out.println("A data não existe");	
+				}
+			
 		scanner.close();
 	}
 }
