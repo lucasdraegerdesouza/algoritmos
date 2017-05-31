@@ -12,7 +12,7 @@ public class ExercicioArray12 {
 		number[1] = false;
 		number[2] = true;
 		for (int i = 0; i < number.length; i++) {
-			if (number[i] == true | number[i] == true | number[i] == true) {
+			if (number[i] == true) {
 				System.out.println("1");
 			}else {
 				System.out.println("2");
