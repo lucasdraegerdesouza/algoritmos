@@ -31,8 +31,10 @@ public class ExercicioArray07 {
 		System.out.println(letras[0]);
 
 /*c.	Imprimir todos os valores do array menos que tenha o valor “C”*/
+		System.out.println(" ");
+		System.out.println("Letra C");
 		for (int i = 0; i < letras.length; i++) {
-			if (letras[i] == "C") {
+			if (letras[i] != "C") {
 				System.out.println(letras[i]);
 			}
 		}

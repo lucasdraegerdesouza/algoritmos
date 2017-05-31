@@ -11,11 +11,9 @@ a.Imprimir o tamanho deste array
 		number[1] = 9;
 		number[2] = 8;
 		number[3] = 7;
+				
+		System.out.println(number.length);
 		
-		
-		for (int i = 0; i < number.length; i++) {
-			System.out.println(number[i]);
-			}
 		}
 	}
 

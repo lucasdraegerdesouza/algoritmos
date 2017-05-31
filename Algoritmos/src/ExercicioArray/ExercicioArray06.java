@@ -21,9 +21,13 @@ public class ExercicioArray06 {
 			System.out.println(number[i]);
 			}
 /*b.Imprimir todos os valores do array de forma decrescente*/
-		for (int i = 0; i < number.length; i++) {
 			Arrays.sort(number);
-			System.out.println(number[i]);
-			}
+			System.out.println(number[5]);
+			System.out.println(number[4]);
+			System.out.println(number[3]);
+			System.out.println(number[2]);
+			System.out.println(number[1]);
+			System.out.println(number[0]);
+		
 	}
 }
