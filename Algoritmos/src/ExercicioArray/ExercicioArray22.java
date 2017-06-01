@@ -6,11 +6,7 @@ import java.util.Scanner;
 
 public class ExercicioArray22 {
 	public static void main(String[] args) {
-/*22.Crie um array de 5 posições com os valores 1, 3, 5, 7, 9.
- Peça para o usuário digitar um valor. Se o valor digitado pelo usuário
- estiver no array, imprima “Achei o valor”, caso contrário,
- não achei o valor. (o System.out.println deve estar fora do for).*/		
-		Scanner scanner = new Scanner(System.in);
+Scanner scanner = new Scanner(System.in);
 		
 		int number[] = new int[10];
 		int number2;
@@ -27,10 +23,8 @@ public class ExercicioArray22 {
 		number2 = scanner.nextInt();
 		
 		for (int j = 0; j < number.length; j++) {	
-			if (number[j] == number2) {
-			achei = true;
-		}else {
-			achei = false;
+			if (number2 == number[j]) {
+				achei = true;
 		}
 	}
 		if (achei == true) {
@@ -41,3 +35,9 @@ public class ExercicioArray22 {
 		scanner.close();
 	}
 }
+
+	
+		
+		
+		
+
