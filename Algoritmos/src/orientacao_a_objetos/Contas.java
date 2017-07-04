@@ -6,6 +6,22 @@ public class Contas {
 		double limite = 100d;
 		Agencias agencia;
 		
+		
+		public Contas(Agencias agencia) {
+			this.agencia = agencia;
+		}
+		
+		public Contas(Agencias agencia, String numero, double limite){
+			this(agencia);
+			this.numero = numero;
+			this.limite = limite;
+		}
+		
+		public void transfere(Contas destino, double valor){
+			this.saldo -= valor;
+			destino.saldo += valor;
+		}
+		
 		public void deposita(double valor){
 			this.saldo += valor;
 		}

@@ -3,29 +3,38 @@ package orientacao_a_objetos;
 public class teste_contas2 {
 		public static void main(String[] args) {
 						
-			Contas conta = new Contas();
-			conta.numero = "00568-8";
-			conta.saldo = 100d;
-			conta.limite = 2000d;
+			Agencias ag = new Agencias("12345");
+				
 			
-			Agencias ag = new Agencias();
-			ag.numero_agencia = "1";
 			
-			conta.agencia = ag;
+			Contas conta = new Contas(ag);
+			conta.numero = "123456";
+			conta.saldo = 1500d;
 			
-			System.out.println("Seu Saldo "+conta.saldo);
+			Contas conta2 = new Contas(ag, "100", 2000d);
+			conta2.saldo = 1500d;
 			
+					
 			//depositei 100 na conta
-			conta.deposita(100d);
-			System.out.println("Depositei 100, Seu Saldo "+conta.saldo);
+			//conta.deposita(100d);
+			//System.out.println("Depositei 100, Seu Saldo "+conta.saldo);
 			//saquei 50 reais
-			conta.saque(50d);
+			//conta.saque(50d);
 			
 			//mostrei o extrato da conta
-			String extrato_conta = conta.extrato();
-			System.out.println("Saquei 50 reais");
-			System.out.println(conta.consultaSaldoDisponivel());
-			System.out.println(extrato_conta);
+			//String extrato_conta = conta.extrato();
+			//System.out.println("Saquei 50 reais");
+			//System.out.println(conta.consultaSaldoDisponivel());
+			//System.out.println(extrato_conta);
+			
+			System.out.println("Conta 1 = " +conta.saldo);
+			System.out.println("Conta 2 = " +conta2.saldo);
+			
+			conta.transfere(conta2, 100d);
+			
+			System.out.println("Conta 1 = " +conta.saldo);
+			System.out.println("Conta 2 = " +conta2.saldo);
+			
 			
 		}
 }

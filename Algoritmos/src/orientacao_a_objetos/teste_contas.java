@@ -6,14 +6,10 @@ import java.text.DecimalFormat;
 public class teste_contas {
 		public static void main(String[] args) {
 			DecimalFormat df = new DecimalFormat("#0.00");
-			Contas conta = new Contas();
-			conta.numero = "00568-8";
-			conta.saldo = 100d;
-			conta.limite = 1000d;
 			
-			Agencias ag = new Agencias();
-			ag.numero_agencia = "1";
-			
+			Agencias ag = new Agencias("12345");
+			Contas conta = new Contas(ag, "100", 2000d);
+								
 			
 			
 			conta.agencia = ag;
