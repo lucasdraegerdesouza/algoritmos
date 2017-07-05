@@ -7,22 +7,38 @@ public class Teste_Funcionario2 {
 		
 		
 	Scanner scanner = new Scanner(System.in);
-	Funcionario fun = new Funcionario("Lucas");
+	Funcionario fun = new Funcionario("");
 	
 	System.out.println("Digite o nome");
 	fun.nome = scanner.nextLine();
 	
 		
-	int aux = 0;
-	while (aux == 0){
-		System.out.println("Digite o nome");
-		fun.nome = scanner.next();
-		System.out.println("Digite o salario");
-		fun.salario = scanner.nextInt();
-		System.out.println(fun.consultarDados());
+	int aux = 1;
+	while (aux != 0){
+		System.out.println("1-Alterar nome, 2 alterar salario, 3 visualizar dados, 0 para sair");
+		aux = Integer.parseInt(scanner.nextLine());
 		
-		System.out.println("Digite 0 para continuar ou 1 para encerrar");
-		aux = scanner.nextInt();
+		switch (aux){
+		
+		case 0:
+			break;
+		
+		case 1:
+			System.out.println("Digite o nome");
+			fun.nome = scanner.nextLine();
+			break;
+		case 2:
+			System.out.println("Digite o salario");
+			fun.salario = Double.parseDouble(scanner.nextLine());
+			break;
+		case 3:
+			System.out.println(fun.consultarDados());
+			break;
+		
+		default:
+			System.out.println("Operação Invalida!");
+			break;
+		}
 	}
 		
 	scanner.close();

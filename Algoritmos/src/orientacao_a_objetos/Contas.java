@@ -1,12 +1,19 @@
 package orientacao_a_objetos;
 
 public class Contas {
+		//atributos
 		String numero;
 		double saldo;
 		double limite = 100d;
 		Agencias agencia;
+		public static int contador;
+		public int id = 0;
 		
-		
+		public Contas(){
+			contador++;
+			id = contador;
+		}
+		//construtor = public
 		public Contas(Agencias agencia) {
 			this.agencia = agencia;
 		}
@@ -17,9 +24,15 @@ public class Contas {
 			this.limite = limite;
 		}
 		
+		//metodo = public void
 		public void transfere(Contas destino, double valor){
 			this.saldo -= valor;
 			destino.saldo += valor;
+		}
+		
+		public static void zeraContador(){
+			System.out.println(contador);
+			contador = 0;			
 		}
 		
 		public void deposita(double valor){
