@@ -1,13 +1,15 @@
 package orientacao_a_objetos;
 
 public class Contas {
-		//atributos
+	//atributos de instancia
 		String numero;
 		double saldo;
 		double limite = 100d;
 		Agencias agencia;
-		public static int contador;
 		public int id = 0;
+		//atributos da classe
+		public static int contador;
+		
 		
 		public Contas(){
 			contador++;

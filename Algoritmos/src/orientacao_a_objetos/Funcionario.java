@@ -5,9 +5,10 @@ import java.text.DecimalFormat;
 public class Funcionario {
 
 	DecimalFormat df = new DecimalFormat("#0.00");
-	//atributos
+	//atributos de instancia
 	String nome;
 	double salario;
+	//atributos da classe
 	static double vale_refeicao;
 	
 	//contador
