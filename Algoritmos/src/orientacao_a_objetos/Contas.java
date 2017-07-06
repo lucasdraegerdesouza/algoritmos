@@ -2,21 +2,47 @@ package orientacao_a_objetos;
 
 public class Contas {
 	//atributos de instancia
-		String numero;
-		double saldo;
-		double limite = 100d;
-		Agencias agencia;
-		public int id = 0;
+		private String numero;
+		private double saldo;
+		private double limite = 100d;
+		private Agencias agencia;
+		
+		public String getNumero() {
+			return numero;
+		}
+		public void setNumero(String numero) {
+			this.numero = numero;
+		}
+		public double getSaldo() {
+			return saldo;
+		}
+		public void setSaldo(double saldo) {
+			this.saldo = saldo;
+		}
+		public double getLimite() {
+			return limite;
+		}
+		public void setLimite(double limite) {
+			this.limite = limite;
+		}
+		public Agencias getAgencia() {
+			return agencia;
+		}
+		public void setAgencia(Agencias agencia) {
+			this.agencia = agencia;
+		}
+
 		//atributos da classe
 		public static int contador;
-		
+		public int id = 0;
 		
 		public Contas(){
-			contador++;
-			id = contador;
+			Contas.contador++;
+			id = Contas.contador;
 		}
 		//construtor = public
 		public Contas(Agencias agencia) {
+			this();
 			this.agencia = agencia;
 		}
 		
@@ -33,8 +59,8 @@ public class Contas {
 		}
 		
 		public static void zeraContador(){
-			System.out.println(contador);
-			contador = 0;			
+			//System.out.println(Contas.contador);
+			Contas.contador = 0;			
 		}
 		
 		public void deposita(double valor){
@@ -46,7 +72,7 @@ public class Contas {
 		}
 		
 		public String extrato(){
-			return "Agencia " + this.agencia.numero_agencia + " Conta " + 
+			return "Agencia " + this.getAgencia().getNumero_agencia() + " Conta " + 
 		this.numero + " Limite da Conta "+this.limite + " Saldo da Conta "+this.saldo;
 			
 		}

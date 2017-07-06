@@ -1,4 +1,4 @@
-package orientacao_a_objetos;
+package java_static;
 
 import java.text.DecimalFormat;
 
@@ -8,6 +8,9 @@ public class Funcionario {
 	//atributos de instancia
 	private String nome;
 	private double salario;
+	//atributos da classe
+	static double vale_refeicao;
+	
 	
 	public String getNome() {
 		return nome;
@@ -25,9 +28,6 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
-	//atributos da classe
-	static double vale_refeicao;
-	
 	//contador
 	public Funcionario(String nome){
 		this.nome = nome;

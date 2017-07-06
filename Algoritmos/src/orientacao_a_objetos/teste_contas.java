@@ -12,13 +12,13 @@ public class teste_contas {
 								
 			
 			
-			conta.agencia = ag;
+			conta.setAgencia(ag);
 			
 			
-			System.out.println(conta.numero);
-			System.out.println (df.format(conta.saldo));
-			System.out.println (df.format(conta.limite));
+			System.out.println(conta.getNumero());
+			System.out.println (df.format(conta.getSaldo()));
+			System.out.println (df.format(conta.getLimite()));
 			conta.deposita(1000d);
-			System.out.println (df.format(conta.saldo));
+			System.out.println (df.format(conta.getSaldo()));
 		}
 }

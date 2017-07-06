@@ -1,4 +1,4 @@
-package orientacao_a_objetos;
+package java_static;
 
 import java.util.Scanner;
 

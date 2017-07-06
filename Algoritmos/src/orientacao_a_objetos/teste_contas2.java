@@ -8,11 +8,11 @@ public class teste_contas2 {
 			
 			
 			Contas conta = new Contas(ag);
-			conta.numero = "123456";
-			conta.saldo = 1500d;
+			conta.setNumero("123456");
+			conta.setSaldo(1500d);
 			
 			Contas conta2 = new Contas(ag, "100", 2000d);
-			conta2.saldo = 1500d;
+			conta2.setSaldo(1500d);
 			
 					
 			//depositei 100 na conta
@@ -27,13 +27,13 @@ public class teste_contas2 {
 			//System.out.println(conta.consultaSaldoDisponivel());
 			//System.out.println(extrato_conta);
 			
-			System.out.println("Conta 1 = " +conta.saldo);
-			System.out.println("Conta 2 = " +conta2.saldo);
+			System.out.println("Conta 1 = " +conta.getSaldo());
+			System.out.println("Conta 2 = " +conta2.getSaldo());
 			
 			conta.transfere(conta2, 100d);
 			
-			System.out.println("Conta 1 = " +conta.saldo);
-			System.out.println("Conta 2 = " +conta2.saldo);
+			System.out.println("Conta 1 = " +conta.getSaldo());
+			System.out.println("Conta 2 = " +conta2.getSaldo());
 			
 			
 		}

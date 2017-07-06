@@ -11,7 +11,7 @@ public class TesteFuncionario {
 		//funcionario.aumentarSalario(100d);
 		
 		System.out.println(funcionario.consultarDados());
-		funcionario.reajuste_valerefeicao(1d);
+		funcionario.reajuste_valerefeicao(10);
 		System.out.println(funcionario2.consultarDados());
 		
 	}

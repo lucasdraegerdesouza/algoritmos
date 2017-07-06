@@ -7,21 +7,21 @@ public class teste_Aluno {
 		public static void main(String[] args) throws ParseException {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 			Aluno aluno = new Aluno();
-			aluno.nome = "Lucas";
-			aluno.rg = "123456";
-			aluno.dtnascimento = sdf.parse("27/01/1995");
+			aluno.setNome("Lucas");
+			aluno.setRg("123456");
+			aluno.setDtnascimento(sdf.parse("27/01/1995"));
 			
 			Turma t = new Turma();
-			aluno.turma.turno = "Noturno";
+			t.turno = "Noturno";
 			
 	
-			aluno.turma = t;
+			aluno.setTurma(t);
 			
 			
-			System.out.println(aluno.nome);
-			System.out.println(aluno.rg);
-			System.out.println(aluno.dtnascimento);
-			System.out.println(aluno.turma.turno);
+			System.out.println(aluno.getNome());
+			System.out.println(aluno.getRg());
+			System.out.println(sdf.format(aluno.getDtnascimento()));
+			System.out.println(aluno.getTurma().turno);
 			
 		}
 }

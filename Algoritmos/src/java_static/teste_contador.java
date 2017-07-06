@@ -5,15 +5,15 @@ import orientacao_a_objetos.Contas;
 public class teste_contador {
 	public static void main(String[] args) {
 		
-		System.out.println(Contas.contador);
+		
 		Contas conta = new Contas();
-		System.out.println(conta.id);
+		System.out.println("id da conta 1"+conta.id);
 		
 		Contas conta2 = new Contas();
-		System.out.println(conta2.id);
+		System.out.println("id da conta 2"+conta2.id);
 		
 		Contas.zeraContador();
-		System.out.println(Contas.contador);
+		System.out.println("Zerei o contador = "+Contas.contador);
 		
 		
 	}
