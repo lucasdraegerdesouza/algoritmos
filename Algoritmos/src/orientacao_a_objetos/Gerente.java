@@ -1,27 +1,44 @@
 package orientacao_a_objetos;
+import orientacao_a_objetos.Funcionario;
 
-public class Gerente {
-		private String nome;
-		private double salario;
+public class Gerente extends Funcionario{
+		
+		private String senha;
+		private String login;
 				
 		
-	public String getNome() {
-			return nome;
+		public String getSenha() {
+			return senha;
 		}
-		public void setNome(String nome) {
-			this.nome = nome;
-		}
-		public double getSalario() {
-			return salario;
-		}
-		public void setSalario(double salario) {
-			this.salario = salario;
+		public void setSenha(String senha) {
+			this.senha = senha;
 		}
 		
-	public void aumentasalario (){
-		this.aumentasalario(10);
-	}
-	public void aumentasalario (double valor){
-		this.salario += ((valor*salario)/100);
-	}
+		public String getLogin() {
+			return login;
+		}
+		public void setLogin(String login) {
+			this.login = login;
+		}
+		
+		public Gerente(){
+			
+		}
+		
+		public Gerente(String login, String senha){
+			this.login = login;
+			this.senha = senha;
+		}
+		
+		@Override
+		public void bonificacaoSalario(){
+			setBonificacao(getSalario()*(15/100d));
+			
+		}
+		
+		@Override
+		public String consultarDados2() {
+		return super.consultarDados2()+" Login = "+this.login+" Senha = "+this.senha;
+		}
+		
 }
