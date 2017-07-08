@@ -1,6 +1,6 @@
 package Java_polimorfismo;
 
-public class conta_poupanca extends contas{
+public class Conta_poupanca extends Contas{
 		private double taxa;
 
 		public double getTaxa() {
@@ -10,4 +10,15 @@ public class conta_poupanca extends contas{
 		public void setTaxa(double taxa) {
 			this.taxa = taxa;
 		}
+		
+		public Conta_poupanca(){
+			
+		}
+
+		public Conta_poupanca(double taxa) {
+			super();
+			this.taxa = taxa;
+		}
+		
+		
 }

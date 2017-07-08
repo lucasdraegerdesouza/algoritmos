@@ -1,6 +1,6 @@
 package Java_polimorfismo;
 
-public class conta_corrente extends contas{
+public class Conta_corrente extends Contas{
 		private double limite;
 
 		public double getLimite() {
@@ -9,5 +9,9 @@ public class conta_corrente extends contas{
 
 		public void setLimite(double limite) {
 			this.limite = limite;
+		}
+		
+		public Conta_corrente(){
+			
 		}
 }

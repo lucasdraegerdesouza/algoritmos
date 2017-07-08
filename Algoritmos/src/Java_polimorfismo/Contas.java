@@ -1,18 +1,16 @@
 package Java_polimorfismo;
 
-public class contas {
-	private String agencia;
+
+
+public class Contas{
+	
 	private String numero;
 	private double saldo;
 	private double saque;
 	private double deposito;
+	private Clientes clientes;
+	private Agencia agencia;
 	
-	public String getAgencia() {
-		return agencia;
-	}
-	public void setAgencia(String agencia) {
-		this.agencia = agencia;
-	}
 	public String getNumero() {
 		return numero;
 	}
@@ -37,4 +35,17 @@ public class contas {
 	public void setDeposito(double deposito) {
 		this.deposito = deposito;
 	}
+	public Clientes getClientes() {
+		return clientes;
+	}
+	public void setClientes(Clientes clientes) {
+		this.clientes = clientes;
+	}
+	public Agencia getAgencia() {
+		return agencia;
+	}
+	public void setAgencia(Agencia agencia) {
+		this.agencia = agencia;
+	}
+		
 }
