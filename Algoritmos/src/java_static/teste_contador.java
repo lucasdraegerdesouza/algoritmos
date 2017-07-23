@@ -12,8 +12,11 @@ public class teste_contador {
 		Contas conta2 = new Contas();
 		System.out.println("id da conta 2"+conta2.id);
 		
-		Contas.zeraContador();
-		System.out.println("Zerei o contador = "+Contas.contador);
+		Contas conta3 = new Contas();
+		System.out.println("id da conta 2"+conta3.id);
+		
+		//Contas.zeraContador();
+		//System.out.println("Zerei o contador = "+Contas.contador);
 		
 		
 	}
