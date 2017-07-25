@@ -8,7 +8,7 @@ public class Peca {
 	private String pec_nome;
 	private double pec_preco;
 	private String pec_cor;
-	private int pec_categoria;//foreign key da categoria da peça
+	private Categoria_peca pec_categoria;//foreign key da categoria da peça
 	
 	public int getPec_codigo() {
 		return pec_codigo;
@@ -42,26 +42,27 @@ public class Peca {
 		this.pec_cor = pec_cor;
 	}
 
-	public int getPec_categoria() {
+	public Categoria_peca getPec_categoria() {
 		return pec_categoria;
 	}
 
-	public void setPec_categoria(int pec_categoria) {
+	public void setPec_categoria(Categoria_peca pec_categoria) {
 		this.pec_categoria = pec_categoria;
 	}
 
-	public static int contador_peca;
+	public static int id_peca;
 	public int id = 0;
 	
 	public Peca (){
 		
 	}
 	
-	public Peca (String pec_nome, double pec_preco, String pec_cor){
-		Peca.contador_peca++;
-		this.pec_codigo = Peca.contador_peca;
-		
-		this.pec_categoria = Categoria_peca.contador++;
+	public Peca (Categoria_peca pec_categoria, String pec_nome, double pec_preco, String pec_cor){
+		this.pec_codigo = Peca.id_peca++;
+		this.pec_categoria = pec_categoria;
+		this.pec_nome = pec_nome;
+		this.pec_preco = pec_preco;
+		this.pec_cor = pec_cor;
 	}
 }
 	

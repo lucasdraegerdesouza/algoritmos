@@ -18,5 +18,15 @@ public class Cidade_fornercedor {
 		this.cif_fornecedor = cif_fornecedor;
 	}
 	
+	public Cidade_fornercedor(){
+		
+	}
 	
-}
+	public Cidade_fornercedor(Cidade cif_cidade, Fornecedor cif_fornecedor){
+		this.cif_cidade = Cidade.id_cidade++;
+		//this.cif_fornecedor = Fornecedor.id_fornecedor++;
+		//vai receber a primary key da cidade e do fornecedor
+		
+	}
+	}
+

@@ -18,5 +18,18 @@ public class Uf {
 		this.uf_nome = uf_nome;
 	}
 	
+	public static int id_uf;
+	public int id = 0;
+	
+	public Uf(){
+		
+	}
+	
+	public Uf(String uf_nome){
+		id = Uf.id_uf;
+		this.uf_codigo = id;
+		this.uf_nome = uf_nome;
+	}
+	
 	
 }

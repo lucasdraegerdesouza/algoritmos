@@ -17,12 +17,11 @@ public class Categoria_peca {
 		this.cpe_descricao = cpe_descricao;
 	}
 	
-	public static int contador;
+	public static int codigo_cpe;
 	public int id = 0;
 	
 	public Categoria_peca(String cpe_descricao){
-		Categoria_peca.contador++;
-		id = Categoria_peca.contador;
+		id = Categoria_peca.codigo_cpe++;
 		this.cpe_codigo = id;
 		this.cpe_descricao = cpe_descricao;
 	}
