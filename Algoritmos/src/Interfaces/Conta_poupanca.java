@@ -1,6 +1,6 @@
 package Interfaces;
 
-public class Conta_poupanca implements Contas{
+public class Conta_poupanca implements IContas{
 
 	@Override
 	public void deposita(double valor) {
@@ -13,6 +13,11 @@ public class Conta_poupanca implements Contas{
 		// TODO Auto-generated method stub
 		
 	}
-	
+
+	@Override
+	public double saldo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }

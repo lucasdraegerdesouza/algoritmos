@@ -1,6 +1,7 @@
 package Interfaces;
 
-public interface Contas {
+public interface IContas {
 		void deposita(double valor);
 		void saca (double valor);
+		double saldo();
 }
