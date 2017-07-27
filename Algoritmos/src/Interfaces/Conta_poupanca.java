@@ -1,23 +1,31 @@
+/**
+ * Classe responsavel pelas classes de uma conta
+ */
 package Interfaces;
-
-public class Conta_poupanca implements IContas{
-
+/**
+ * Classe responsavel por uma conta poupança que herda os atributos de conta
+ * @author Lucas Draeger de Souza
+ *
+ */
+public class Conta_poupanca extends Conta{
+/**
+ * Metodos herdados da classe conta
+ */
 	@Override
 	public void deposita(double valor) {
-		// TODO Auto-generated method stub
+		this.setSaldo(getSaldo()+ valor);
 		
 	}
 
 	@Override
 	public void saca(double valor) {
-		// TODO Auto-generated method stub
+		this.setSaldo(getSaldo()- valor);
 		
 	}
 
 	@Override
 	public double saldo() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getSaldo();
 	}
 	
 }

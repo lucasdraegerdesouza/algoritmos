@@ -1,10 +1,20 @@
+/**
+ * Classe responsavel pelas classes de uma conta
+ */
 package Interfaces;
-
+/**
+ * Classe responsavel por uma conta corrente que herda os atributos de conta 
+ * @author Lucas Draeger de Souza
+ *
+ */
 public class Conta_corrente extends Conta {
-
+/**
+ * Variavel limite
+ */
 	private double limite;
-	
-	
+/**
+ * Metodos herdados da classe conta
+ */
 	@Override
 	public void deposita(double valor) {
 		this.setSaldo(getSaldo()+ valor);
@@ -21,7 +31,10 @@ public class Conta_corrente extends Conta {
 	public double saldo() {
 		return getSaldo();
 	}
-	
+	/**
+	 * geters e seters da variavel limite
+	 * @return
+	 */
 	public double getLimite() {
 		return limite;
 	}

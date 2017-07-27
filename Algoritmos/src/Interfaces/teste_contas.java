@@ -1,5 +1,13 @@
+/**
+ * Classe responsavel pelas classes de uma conta
+ */
 package Interfaces;
 
+/**
+ * Classe responsavel pelo teste da interface e das contas
+ * @author Noturno
+ *
+ */
 public class teste_contas {
 	public static void main(String[] args) {
 		
