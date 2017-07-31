@@ -60,10 +60,6 @@ public class Funcionario {
 		Funcionario.vale_refeicao += Funcionario.vale_refeicao * taxa/100;
 	}
 	public void aumentarSalario(double valor){
-		if (valor < 0) {
-			IllegalArgumentException erro = new IllegalArgumentException ();
-			throw erro;
-	}
 		this.salario += valor;
 	}
 	
