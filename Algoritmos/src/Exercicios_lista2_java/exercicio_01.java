@@ -13,10 +13,26 @@ public class exercicio_01 {
 		int[] resultado = new int[] {59, 25, 11, 9, 10, 2};
 		
 		for (int i = 0; i < resultado.length; i++) {
-			for (int j = 0; j < aposta1.length; j++) {
+			for (int j = 0; j < resultado.length; j++) {
 				if (resultado[i] == aposta1[j]) {
-					System.out.println("Numeros iguais "+resultado[i]+" = "+aposta1[j]);
-									
+					System.out.println("Aposta 1 Numeros iguais "+resultado[i]+" = "+aposta1[j]);
+					break;				
+					}
+				if (resultado[i] == aposta2[j]) {
+					System.out.println("\nAposta 2 Numeros iguais "+resultado[i]+" = "+aposta2[j]);
+					break;				
+					}
+				if (resultado[i] == aposta3[j]) {
+					System.out.println("\nAposta 3 Numeros iguais "+resultado[i]+" = "+aposta3[j]);
+					break;				
+					}
+				if (resultado[i] == aposta4[j]) {
+					System.out.println("\nAposta 4 Numeros iguais "+resultado[i]+" = "+aposta4[j]);
+					break;				
+					}
+				if (resultado[i] == aposta5[j]) {
+					System.out.println("\nAposta 5 Numeros iguais "+resultado[i]+" = "+aposta5[j]);
+					break;				
 					}
 				}
 			}
