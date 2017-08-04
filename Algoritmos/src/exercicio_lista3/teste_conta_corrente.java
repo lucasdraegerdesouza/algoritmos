@@ -13,6 +13,6 @@ public class teste_conta_corrente {
 		+"\nConta = "+cc.getNumero_conta()
 		+"\nLimite = "
 		+cc.getLimite_conta()
-		+"\nSaque = "+cc.getSaque_conta());
+		+"Saque = "+cc.getSaque_conta());
 	}
 }
