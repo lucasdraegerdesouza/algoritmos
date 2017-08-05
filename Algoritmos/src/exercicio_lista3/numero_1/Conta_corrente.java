@@ -1,4 +1,4 @@
-package exercicio_lista3;
+package exercicio_lista3.numero_1;
 
 public class Conta_corrente {
 	
